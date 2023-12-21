@@ -1,8 +1,10 @@
-// next.config.js
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: { esmExternals: true },
+  experimental: {
+    appDir: true,
+  },
   images: {
-    domains: ["upload.wikimedia.org", "https://extreme-ip-lookup.com"],
+    domains: ["upload.wikimedia.org"],
   },
 };
 
