@@ -11,7 +11,7 @@ export default function ImageSearchResults({ results }) {
               <Link href={result.image.contextLink}>
 
                 <img
-                  unoptimized
+                  
                   src={result.link}
                   alt={result.image}
                   className="h-60 group-hover:shadow-xl w-full object-contain transition-shadow"
