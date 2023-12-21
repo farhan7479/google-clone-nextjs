@@ -5,12 +5,15 @@ export default function ImageSearchResults({ results }) {
     <div className="pb-24 mt-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-3 space-x-4">
         {results.items.map((result) => (
+          
           <div key={result.link} className="mb-8">
             <div className="group">
               <Link href={result.image.contextLink}>
+
                 <img
+                  unoptimized
                   src={result.link}
-                  alt={result.title}
+                  alt={result.image}
                   className="h-60 group-hover:shadow-xl w-full object-contain transition-shadow"
                 />
               </Link>
@@ -21,7 +24,7 @@ export default function ImageSearchResults({ results }) {
               </Link>
               <Link href={result.image.contextLink}>
                 <p className="group-hover:underline text-gray-600">
-                  {result.displayLink}
+                  {result.displayLink }
                 </p>
               </Link>
             </div>
