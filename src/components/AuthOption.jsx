@@ -1,6 +1,8 @@
-
-export default AuthOption = () =>{
-     return (
-        <h1 className="height-30px width-30px"> auth Page </h1>
-     )
-}
+const AuthOption = () => {
+    return (
+      <h1 className="h-30 w-30">Auth Page</h1>
+    );
+  };
+  
+  export default AuthOption;
+  
