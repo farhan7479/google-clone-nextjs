@@ -14,6 +14,9 @@ const AuthOption = () => {
       dispatch(signOutUserStart());
       const res = await fetch('/api/auth/signout', {
         method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json',
+        },
         body: JSON.stringify({
           email: currentUser.email,
         }),
