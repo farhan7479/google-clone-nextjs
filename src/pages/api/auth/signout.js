@@ -11,6 +11,7 @@ export default async function handler(req, res) {
 
   try {
     const { email } = req.body;
+    if(!email) return res.status(304).json({message:"User not Found"})
     await User.deleteOne({ email });
     return res.status(200).json({ message: 'User Successfully signed out' });
   } catch (error) {
