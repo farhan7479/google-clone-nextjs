@@ -26,6 +26,7 @@ export default function WebSearchResults({ results }) {
           </p>
         </div>
       ))}
+      
     </div>
   );
 }
